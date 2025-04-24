@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Scratchly</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-    img {
-      display: block;
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-    }
-  </style>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <body>
+  <div class="auth-buttons">
+  <a href="/signup" class="btn">Create Account</a>
+  <a href="/login" class="btn">Sign In</a>
+</div>
+
+
+  <img src="{{ url_for('static', filename='scratchly-banner.png') }}" alt="Scratchly Banner">
+</body>
+
+
 </head>
 <body>
   <img src="{{ url_for('static', filename='scratchly-banner.png') }}" alt="Scratchly Banner">
