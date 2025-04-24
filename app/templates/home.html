@@ -1,10 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Scratch Learning</title>
+  <meta charset="UTF-8">
+  <title>Scratchly</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    img {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to Scratch Learning</h1>
-    <p>This is your starter homepage.</p>
+  <img src="{{ url_for('static', filename='scratchly-banner.png') }}" alt="Scratchly Banner">
 </body>
 </html>
+
+
+
