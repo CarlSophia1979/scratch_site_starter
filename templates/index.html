@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scratchly</title>
+  <style>
+    body {
+      background-color: #1c9bd1;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Button container aligned with banner */
+    .top-right-buttons {
+      position: absolute;
+      top: 120px; /* adjust this to move buttons up/down */
+      right: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    /* Button styling */
+    .top-right-buttons a {
+      text-decoration: none;
+      color: #f8991d;
+      background-color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: background 0.2s ease;
+      width: 160px;
+    }
+
+    .top-right-buttons a:hover {
+      background-color: #f3f3f3;
+    }
+
+    /* Banner image container */
+    .banner-container {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .banner {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1271a2;
+      color: white;
+      font-size: 14px;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top right buttons -->
+  <div class="top-right-buttons">
+    <a href="/signup">Create Account</a>
+    <a href="/login">Sign In</a>
+  </div>
+
+  <!-- Centered Scratchly banner -->
+  <div class="banner-container">
+    <img class="banner" src="{{ url_for('static', filename='images/scratchly-banner.png') }}" alt="Scratchly Banner">
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    © 2025 Scratchly. All rights reserved.
+  </footer>
+
+</body>
+</html>
+
